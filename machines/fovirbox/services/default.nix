@@ -1,5 +1,6 @@
 {
   imports = [
+    # ../values/meet.nix
     ../values/sci.nix
     ./caddy.nix
     ./ensure-path.nix
@@ -11,7 +12,6 @@
     ./polaris.nix
     ./postgres.nix
     ./radicale.nix
-    ./redis.nix
     ./restic.nix
     ./rsshub.nix
     ./searxng.nix
@@ -20,6 +20,7 @@
     ./syncthing.nix
     ./tuwunel.nix
     ./umami.nix
+    ./valkey.nix
     ./wakapi.nix
   ];
 }

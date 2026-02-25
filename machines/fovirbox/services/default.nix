@@ -2,6 +2,7 @@
   imports = [
     # ../values/meet.nix
     ../values/sci.nix
+    ./authelia.nix
     ./caddy.nix
     ./ensure-path.nix
     ./fusion.nix

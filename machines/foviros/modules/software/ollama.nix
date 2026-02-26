@@ -18,9 +18,12 @@
 
     package = pkgs.ollama-cuda;
     loadModels = [
+      "codellama:13b"
       "gemma3:12b"
       "gpt-oss:20b"
+      "llama3.2-vision:11b"
       "llama3.2:3b"
+      "qwen3-vl:30b"
     ];
     syncModels = true;
   };

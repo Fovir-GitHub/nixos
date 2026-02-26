@@ -1,5 +1,6 @@
 {
   imports = [
+    ./alpaca.nix
     ./anki.nix
     ./archiver.nix
     ./gotify-desktop.nix

@@ -17,13 +17,19 @@
     enable = true;
 
     package = pkgs.ollama-cuda;
+    environmentVariables = {
+      OLLAMA_CONTEXT_LENGTH = "64000";
+    };
     loadModels = [
-      "codellama:13b"
       "gemma3:12b"
       "gpt-oss:20b"
       "llama3.2-vision:11b"
       "llama3.2:3b"
+      "qwen2.5-coder:14b"
+      "qwen3-coder:30b"
       "qwen3-vl:30b"
+      "qwen3.5:27b"
+      "translategemma:27b"
     ];
     syncModels = true;
   };

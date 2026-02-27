@@ -11,6 +11,7 @@
     ./live-server.nix
     ./neovide.nix
     ./nixvim
+    ./opencode.nix
     ./podman-compose.nix
     ./sui.nix
     ./usbutils.nix

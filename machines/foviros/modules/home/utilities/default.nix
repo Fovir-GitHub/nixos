@@ -6,6 +6,7 @@
     ./gotify-desktop.nix
     ./gpg.nix
     ./keepassxc.nix
+    ./koreader.nix
     ./libreoffice.nix
     ./localsend.nix
     ./lutris.nix

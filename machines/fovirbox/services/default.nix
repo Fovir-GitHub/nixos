@@ -3,6 +3,7 @@
     # ../values/meet.nix
     ../values/sci.nix
     ./authelia.nix
+    ./bird-lg.nix
     ./caddy.nix
     ./dn42.nix
     ./ensure-path.nix

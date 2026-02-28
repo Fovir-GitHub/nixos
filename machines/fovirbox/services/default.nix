@@ -7,6 +7,7 @@
     ./caddy.nix
     ./dn42.nix
     ./ensure-path.nix
+    ./flapalerted.nix
     ./fusion.nix
     ./gotify-fail2ban.nix
     ./gotify.nix

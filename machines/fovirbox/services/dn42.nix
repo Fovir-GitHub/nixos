@@ -20,18 +20,32 @@
     privateKeyFile = "${pkgs.writeText "private-key" "${import ../values/dn42-private-key.nix}"}";
 
     peers = {
+      AS20728 = {
+        wg = {
+          listenPort = 20728;
+          publicKey = "rxVEiqcS4UseSPlLyHI716WRKOWgKp3QtTWXs/2FdGw=";
+          endpoint = "rintarou.yzlab.eu.org:20728";
+          linkLocal = "fe80::1984/64";
+          remoteV4 = "172.22.106.29";
+          remoteV6 = "fd38:8b09:eb92::29";
+        };
+        bgp = {
+          remoteAs = 4242420728;
+          neighborLinkLocal = "fe80::0728";
+        };
+      };
       fovir2 = {
         wg = {
           listenPort = 40000;
           publicKey = "wJmYG6HDXp+sYXniz7VDPkzZ8AKZxMiG39jDLKwmggA=";
           endpoint = import ../values/dn42-fovir2-endpoint.nix;
-          linkLocal = "fe80::1/64";
+          linkLocal = "fe80::100/64";
           remoteV4 = "172.21.118.146";
           remoteV6 = "fdee:6aaa:01d9::3";
         };
         bgp = {
           remoteAs = 4242421984;
-          neighborLinkLocal = "fe80::2";
+          neighborLinkLocal = "fe80::200";
         };
       };
     };

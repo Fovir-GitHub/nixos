@@ -9,8 +9,8 @@ in {
   users.users.root = import ./values/user-root.nix;
 
   imports = [
-    ../../modules/optional/boot-loader/limine.nix
     (import ../../modules/optional/fail2ban.nix {ignoreIP = import ./values/fail2ban-ignore-ip.nix;})
+    ../../modules/optional/boot-loader/limine.nix
     ../../modules/optional/firewall.nix
     ../../modules/optional/kernels/xanmod.nix
     ../../modules/optional/virtualisation/podman.nix

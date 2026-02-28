@@ -25,13 +25,13 @@
           listenPort = 40000;
           publicKey = "wJmYG6HDXp+sYXniz7VDPkzZ8AKZxMiG39jDLKwmggA=";
           endpoint = import ../values/dn42-fovir2-endpoint.nix;
-          linkLocal = "fe80::9334/64";
+          linkLocal = "fe80::1/64";
           remoteV4 = "172.21.118.146";
           remoteV6 = "fdee:6aaa:01d9::3";
         };
         bgp = {
           remoteAs = 4242421984;
-          neighborLinkLocal = "fe80::9334";
+          neighborLinkLocal = "fe80::2";
         };
       };
     };

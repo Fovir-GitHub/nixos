@@ -4,6 +4,7 @@
     ../values/sci.nix
     ./authelia.nix
     ./caddy.nix
+    ./dn42.nix
     ./ensure-path.nix
     ./fusion.nix
     ./gotify-fail2ban.nix

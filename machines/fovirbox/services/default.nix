@@ -20,7 +20,6 @@
     ./rsshub.nix
     ./searxng.nix
     ./social.nix
-    ./stump.nix
     ./syncthing.nix
     ./tuwunel.nix
     ./umami.nix

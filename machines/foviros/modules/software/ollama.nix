@@ -23,11 +23,12 @@
     loadModels = [
       "gemma3:12b"
       "gpt-oss:20b"
-      "lfm2:24b"
       "llama3.2-vision:11b"
       "llama3.2:3b"
       "qwen2.5-coder:14b"
+      "qwen2.5-coder:32b-instruct-q4_0"
       "qwen3-coder:30b"
+      "qwen3-coder:30b-a3b-q4_K_M"
       "qwen3-vl:30b"
       "qwen3.5:27b"
       "translategemma:27b"

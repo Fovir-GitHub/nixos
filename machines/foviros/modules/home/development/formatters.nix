@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     alejandra
+    black
     google-java-format
     prettier
     prettier-plugin-go-template
@@ -26,7 +27,7 @@
       end_of_line = lf
       charset = utf-8
 
-      [*.{c,cpp,h,hpp,go,rs}]
+      [*.{c,cpp,h,hpp,go,rs,py}]
       indent_size = 4
     '';
   };

@@ -16,6 +16,7 @@
         "go" = ["gofmt"];
         "java" = ["google-java-format"];
         "nix" = ["alejandra"];
+        "python" = ["black"];
         "rust" = ["rustfmt"];
         "tex" = ["latexindent"];
         "toml" = ["taplo"];

@@ -13,24 +13,22 @@ in {
     history.size = 10000;
     syntaxHighlighting.enable = true;
     shellAliases = {
-      ls = "eza -alF --color=always --group --group-directories-first --icons=always"; # Preferred listing.
-      la = "eza -a --color=always --group-directories-first --icons=always"; # All files and dirs.
-      ll = "eza -l --color=always --group-directories-first --icons=always"; # Long format.
-      lt = "eza -aT --color=always --group-directories-first --icons=always"; # Tree listing.
-
-      open = "xdg-open"; # Open.
-      j = "just";
-
+      cp = "cp -v";
+      gfo = "git fetch origin";
+      gfu = "git fetch upstream";
       gpa = "git push --all";
       gs = "git switch";
       gsc = "git switch --create";
       gsd = "git switch $(git_develop_branch)";
       gsm = "git switch $(git_main_branch)";
-      gfu = "git fetch upstream";
-      gfo = "git fetch origin";
-
-      cp = "cp -v";
+      gst = "git status --untracked-files";
+      j = "just";
+      la = "eza -a --color=always --group-directories-first --icons=always"; # All files and dirs.
+      ll = "eza -l --color=always --group-directories-first --icons=always"; # Long format.
+      ls = "eza -alF --color=always --group --group-directories-first --icons=always"; # Preferred listing.
+      lt = "eza -aT --color=always --group-directories-first --icons=always"; # Tree listing.
       mv = "mv --verbose";
+      open = "xdg-open"; # Open.
       rm = "rm -v";
       tempdir = "cd $(mktemp -d)";
     };

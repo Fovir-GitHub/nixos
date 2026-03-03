@@ -23,19 +23,6 @@
           });
         };
     })
-    (final: prev: {
-      ollama-cuda = prev.ollama-cuda.overrideAttrs (oldAttrs: {
-        version = "0.17.4";
-        src = pkgs.fetchFromGitHub {
-          owner = "ollama";
-          repo = "ollama";
-          tag = "v0.17.4";
-          hash = "sha256-9yJ8Jbgrgiz/Pr6Se398DLkk1U2Lf5DDUi+tpEIjAaI=";
-        };
-        vendorHash = "sha256-Lc1Ktdqtv2VhJQssk8K1UOimeEjVNvDWePE9WkamCos=";
-        proxyVendor = true;
-      });
-    })
     inputs.nix-vscode-extensions.overlays.default
   ];
 }

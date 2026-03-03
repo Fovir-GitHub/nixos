@@ -1,14 +1,14 @@
 {
-	"data": "ENC[AES256_GCM,data:hJYsr7zaiw8S9rp2731Y0Lsg7MXWTQoi9O9dnRWw7bYSUbTc2BVk3RKZ6XI37qQ2mKLS7WorUA==,iv:pT0Jyz6uM14iz/ARb/Xn4B6GsH6tLBKHuz48nlSmPIA=,tag:CsCWQ4+s2SOy6yGQzUFumw==,type:str]",
+	"data": "ENC[AES256_GCM,data:prtDYOgLhmdM6IWGySb97OZhGH0dWVOIBiVmJy2gFvIJj35rW7w27Vji22DOrmuPwh0CfNUxpA==,iv:JvNQ2CcHFMkrL4ysnYAbpZ5bA+pjefNYXaYHIi6CEMU=,tag:/B5o0ocTUR+Mw6vxq1tVYA==,type:str]",
 	"sops": {
 		"age": [
 			{
 				"recipient": "age172xqa230e5vwzsdajc6ak235qvg448nf9g02xjp80w3vknsacd3qszzc87",
-				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBJemJMSUdhQjdIQVVScHAr\ncEhmWW1Dck9wdFJFeWlOdVhjYTZGbEFJVGtrCnBqaUJod2RpVVFBU2VIaVZpRGZq\nWXd2U1hkRU1TTGJxMjU0RDlFSmIzS0EKLS0tIEppNDNKR0UwdUFYRStPcTJNU1ox\na3QycFB3NHVSNkZoNTNLUGJZUnFBd2sKqHGsVx5x8WbztAPb2t3pP6O6RO6DqZRc\nu4Y9m0jo3aKyJBmGBDUUr2MfriqlCRrr5qHnoXL5ZhM8G+l6CJsD4g==\n-----END AGE ENCRYPTED FILE-----\n"
+				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB2ZnhranozVTJZQWhNeGJn\nNWxHVnYvQWJRTFozKytwQW55Y1pFcDRpSUg4CklVT2d1cVNKUURnbFptVVBOTFVv\nQ0FUM2VqMTRjN2EvZWU5eVFXMXdmSmMKLS0tIDNiTjFmK0VZSExrRmFFRFRXR1J6\nWnkzNVl6VjRyWjQ5OGpFV2d1SEF2cUkKm2ZV7JHMcZVMzdeIAs1ViKxzZu3NJ5H1\nxgvMGdxeZ1yl8BmujaG7enyscZSHtUWUCCeT0LjGkM253lCHdwSwoA==\n-----END AGE ENCRYPTED FILE-----\n"
 			}
 		],
-		"lastmodified": "2026-03-03T06:13:08Z",
-		"mac": "ENC[AES256_GCM,data:GPvj4P763sC5AgUtuMmZpMzgU07ErlqikLVDbwhLBXftfYwBzgcV58rT0Em5n927uEyKN0l15J2X+TRBLJcA/5UQMDh8cwbaxUf0V0CXsKWEZlZVaZEhBPK+poIGFOBpmbOK8EUUKFfVLogoy8NvCbiZWVwxs67PenGwaYDzXUk=,iv:+OOXfnxCyj8dRG6h6XiJqh60eYuL/6L7xdHCT4IXeyo=,tag:pavdH34Xec+vJ/3+j2pSSQ==,type:str]",
-		"version": "3.11.0"
+		"lastmodified": "2026-03-03T15:34:07Z",
+		"mac": "ENC[AES256_GCM,data:Qnn0mtSFb2pD9C6LnfjI/VI4FjYlaoYmBJzQx53lbIqxiU/Rbsnd14LGHl6xvsmVkJPRa5v6HU4BMAkSko9e33NyFzSQN+EB2Z/7izWf20kExzGmvfhQqb2j+pPXnXMVW4J/EYH4mzIh/bDh04SCcdhW5+OjfTWslwTL4TNdzW4=,iv:kJkmdocqRTsFIST++blQpTUd2mM/a0SJjbubr/jgsRQ=,tag:aMEDWHZWdm8tsebKxwGFUA==,type:str]",
+		"version": "3.12.1"
 	}
 }

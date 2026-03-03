@@ -1,14 +1,14 @@
 {
-	"data": "ENC[AES256_GCM,data:0dqWW4c0pVL7LdlJizqhc71lhPir1vhVrOGyZ1EvSyvr7wcCFiw2f2WVWzYw3Z0MJG54ytu3LI7YQFRYI6m9gzbAGY5R+jZ1iUkbKB8V+HH+2x3VZRc=,iv:Py+wnJb1cltl8GMwEXhRkpLmsBfcYRBKblqoduAdzc4=,tag:2wkGp3AQAPWPBorRyxP4jQ==,type:str]",
+	"data": "ENC[AES256_GCM,data:+uCn7pzKQ1nUqpi4SZgG/otV9wKjcgi1CwwxSqddon/fhbUnnKvMoK9116cBOvGqF3Wq69QfOH6zzxSmhyyNKIMK7Uy5FJE/9LaFtNmhkJvUlG9jfW8=,iv:XGWlaQMlCK0niMYCaiTcJSWZrl7rJjmBlmvdwnLx+vo=,tag:R+B48xLtg1TfdYJoWkN4/w==,type:str]",
 	"sops": {
 		"age": [
 			{
 				"recipient": "age172xqa230e5vwzsdajc6ak235qvg448nf9g02xjp80w3vknsacd3qszzc87",
-				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB2WU0yZjJlR3h1cGZrWG5z\nbmg4K2NPUmhZV2xHNjhNSkV1OGE5ZEtoTEdZClJYeXU0VnpwSkRmKzNaMGluRFFH\nSWt4Z2tTT2VTVmNzSUdCODVmM3k1bHMKLS0tIFk1QWNsVWF3SXZ1dU5FWm4vUk1O\nWmIyT0gzU01Hd0sxWmdGRXRNbGJZdkkKbUBUkNCR2EQgm7WT15RlmMTP0rwjkNSa\nOjZnfNikss0K6hofSK4JimRgM0fljOuMCuqWPDtNNZ7znbfNW6mUgQ==\n-----END AGE ENCRYPTED FILE-----\n"
+				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBTNlhCd083WHpxQXhyRkZJ\ndG40dFk3cjBwRkNBY2FSNGtuUGRaT0N6TVhBCmtIaXdmdnNRdUlaWnM2MHJIWU5x\nNjNlSjVHVFBnbncrZUc1cTNpaDRpNUEKLS0tIEtYSnhvSU9uU2V1QnUyVWc3WTg0\nR2VmRUUzeEl5c0d0M1dCaEJlMmNsTUEK3zuN0wlz6oTQo4FiFgLClcIEog0yOWdX\nBGOD+g0RIRNAX7d4310oZ/tCqorKOWRkJS4U1Sia0GzVaZ4Arv4yDw==\n-----END AGE ENCRYPTED FILE-----\n"
 			}
 		],
-		"lastmodified": "2026-03-03T06:13:09Z",
-		"mac": "ENC[AES256_GCM,data:W36K3YtOvt9Oo1XgbvB3LTBE16GOciCG2s5L8GuesmU9eVJ4TbywOuLxuv+2wTWkIUjGRgx33E3katFXDa2MM+nIdcJ/IilLlog+StV5eVoedJ/Z8EfMVjjVT5jHlaYEz6pwL3NkzW81rzhI/hRZ4QxFc6M6a7Ho3EqOa4jLwPQ=,iv:+M1gB4TbRPI4SKkvIH1J9VuUD8vCSkJCLI2bFwlCFzg=,tag:2+mYOpDOlR+NfD+EJ3QC+g==,type:str]",
-		"version": "3.11.0"
+		"lastmodified": "2026-03-03T15:34:08Z",
+		"mac": "ENC[AES256_GCM,data:Z+x4uLbre3j5+y7KW42J+QqM/KGe0QUpiVJECcJEmPjr2rb/b5YwnXqyak39nqZoqNIO0zUaxNT46WPkknlj7I5e1LtR1tpPRfWCiBC8NpahUQ3Ocrfq7QkuThOHUrd1asIcw+R4COl7UDGBam9YfewEYwAxOJMjlZEIdr1YU6w=,iv:6G0JQRdhhSiQJvxNR8mz/Dz5P8d2Ahfig831rQBZfNw=,tag:8CAsa71P8aJ5rU6GuZoZuQ==,type:str]",
+		"version": "3.12.1"
 	}
 }

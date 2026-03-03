@@ -20,6 +20,7 @@
     environmentVariables = {
       OLLAMA_CONTEXT_LENGTH = "64000";
     };
+    host = "0.0.0.0";
     loadModels = [
       "gemma3:12b"
       "gpt-oss:20b"

@@ -4,7 +4,7 @@
 
     settings = {
       autoupdate = true;
-      theme = "opencode";
+      theme = "catppuccin-macchiato";
       provider = {
         ollama = {
           models = let

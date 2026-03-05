@@ -5,7 +5,30 @@
 }: {
   programs = {
     waybar.enable = true;
-    wlogout.enable = true;
+    wlogout = {
+      enable = true;
+
+      layout = [
+        {
+          label = "lock";
+          action = "hyprlock";
+          text = "Lock";
+          keybind = "l";
+        }
+        {
+          label = "reboot";
+          action = "reboot";
+          text = "Reboot";
+          keybind = "r";
+        }
+        {
+          label = "shutdown";
+          action = "poweroff";
+          text = "Power off";
+          keybind = "p";
+        }
+      ];
+    };
   };
 
   services = {
@@ -45,6 +68,9 @@
       "$mod, D, exec, swaync-client -d -sw"
       "$mod, R, exec, pkill waybar; waybar &"
     ];
-    layerrule = ["animation fade, match:namespace .*swayosd.*"];
+    layerrule = [
+      "animation fade, match:namespace .*logout_dialog.*"
+      "animation fade, match:namespace .*swayosd.*"
+    ];
   };
 }

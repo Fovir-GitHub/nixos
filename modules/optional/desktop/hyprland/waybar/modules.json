@@ -44,7 +44,8 @@
       "car": "",
       "default": ["", "", ""]
     },
-    "on-click": "pavucontrol"
+    "on-click": "pavucontrol",
+    "on-click-right": "pamixer --toggle-mute"
   },
   "cpu": {
     "format": "  {usage}%",

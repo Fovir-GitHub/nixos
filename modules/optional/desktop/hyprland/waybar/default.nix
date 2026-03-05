@@ -3,7 +3,10 @@
   pkgs,
   ...
 }: {
-  programs.waybar.enable = true;
+  programs = {
+    waybar.enable = true;
+    wlogout.enable = true;
+  };
 
   services = {
     swaync = {

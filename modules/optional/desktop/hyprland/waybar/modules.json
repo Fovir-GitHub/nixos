@@ -1,4 +1,13 @@
 {
+  "custom/nixos": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "wlogout"
+  },
+  "hyprland/window": {
+    "format": "{initialTitle}",
+    "icon": true
+  },
   "hyprland/workspaces": {
     "disable-scroll": false,
     "all-outputs": true,

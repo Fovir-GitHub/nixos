@@ -64,6 +64,10 @@
     "format-critical": " {temperatureC}",
     "format": " {temperatureC}°C"
   },
+  "network": {
+    "format": " {bandwidthTotalBytes}  {bandwidthDownBytes}",
+    "interval": 1
+  },
   "backlight": {
     "device": "amdgpu_bl1",
     "format": "{icon}  {percent}%",

@@ -4,7 +4,14 @@
   ...
 }: {
   programs.waybar.enable = true;
-  services.swaync.enable = true;
+  services.swaync = {
+    enable = true;
+
+    settings = {
+      timeout = 3;
+      timeout-low = 1;
+    };
+  };
 
   home = {
     file = let

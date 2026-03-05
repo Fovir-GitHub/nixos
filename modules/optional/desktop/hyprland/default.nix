@@ -22,10 +22,10 @@
   home-manager.users.${username} = {pkgs, ...}: {
     imports = [
       (import ./hyprland.nix {inherit monitor-config;})
-      (import ./hyprpanel.nix {inherit avatar-path;})
       ./hyprlock.nix
       ./hyprpaper.nix
       ./hyprshell
+      ./waybar
     ];
 
     home = {

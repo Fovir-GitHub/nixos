@@ -1,0 +1,90 @@
+{
+  "hyprland/workspaces": {
+    "disable-scroll": false,
+    "all-outputs": true,
+    "warp-on-scroll": true,
+    "on-scroll-up": "hyprctl dispatch workspace e-1",
+    "on-scroll-down": "hyprctl dispatch workspace e+1",
+    "format": "{icon}",
+    "format-icons": {
+      "urgent": "",
+      "active": "",
+      "default": ""
+    }
+  },
+  "custom/swaync": {
+    "tooltip": false,
+    "format": "{icon}  {text}",
+    "format-icons": {
+      "notification": "󰂚",
+      "none": "󰂜",
+      "dnd-notification": "󰂛",
+      "dnd-none": "󰂛"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-bluetooth": "{icon} {volume}%  {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": "󰝟 0%",
+    "format-source": " {volume}%",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+  "cpu": {
+    "format": "  {usage}%",
+    "tooltip": true
+  },
+  "memory": {
+    "format": "  {}%",
+    "tooltip": true
+  },
+  "temperature": {
+    "interval": 10,
+    "critical-threshold": 100,
+    "format-critical": " {temperatureC}",
+    "format": " {temperatureC}°C"
+  },
+  "backlight": {
+    "device": "amdgpu_bl1",
+    "format": "{icon}  {percent}%",
+    "format-icons": ["󰃞", "󰃟", "󰃠"],
+    "on-scroll-up": "brightnessctl set 5%+",
+    "on-scroll-down": "brightnessctl set 5%-"
+  },
+  "tray": {
+    "icon-size": 14,
+    "spacing": 8
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon}  {capacity}%",
+    "format-full": "{icon}  {capacity}%",
+    "format-charging": "  {capacity}%",
+    "format-plugged": "  {capacity}%",
+    "format-alt": "{time}  {icon}",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "clock": {
+    "format": " {:%a %b %d %H:%M:%S}",
+    "interval": 1
+  }
+}

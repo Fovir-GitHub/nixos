@@ -55,7 +55,7 @@
     "tooltip": true
   },
   "memory": {
-    "format": "  {}%",
+    "format": "  {used} / {total} GiB",
     "tooltip": true
   },
   "temperature": {

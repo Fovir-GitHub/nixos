@@ -48,9 +48,9 @@
       ];
       bindl = [
         # Volume control.
-        ",XF86AudioRaiseVolume,exec,pamixer -i 5"
-        ",XF86AudioLowerVolume,exec,pamixer -d 5"
-        ",XF86AudioMute,exec,pamixer --toggle-mute"
+        ",XF86AudioRaiseVolume,exec,swayosd-client --output-volume +5"
+        ",XF86AudioLowerVolume,exec,swayosd-client --output-volume -5"
+        ",XF86AudioMute,exec,swayosd-client --output-volume mute-toggle"
         # Brightness control.
         ",XF86MonBrightnessUp,exec, brightnessctl set +5%"
         ",XF86MonBrightnessDown,exec,brightnessctl set 5%-"

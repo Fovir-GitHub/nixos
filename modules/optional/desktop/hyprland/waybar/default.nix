@@ -4,13 +4,17 @@
   ...
 }: {
   programs.waybar.enable = true;
-  services.swaync = {
-    enable = true;
 
-    settings = {
-      timeout = 3;
-      timeout-low = 1;
+  services = {
+    swaync = {
+      enable = true;
+
+      settings = {
+        timeout = 3;
+        timeout-low = 1;
+      };
     };
+    swayosd.enable = true;
   };
 
   home = {
@@ -24,11 +28,13 @@
     packages = with pkgs; [
       libnotify
       networkmanagerapplet
+      pwvucontrol
     ];
   };
 
   wayland.windowManager.hyprland.settings = {
     exec-once = [
+      "blueman-applet"
       "nm-applet"
       "waybar"
     ];
@@ -36,5 +42,6 @@
       "$mod, D, exec, swaync-client -d -sw"
       "$mod, R, exec, pkill waybar; waybar &"
     ];
+    layerrule = ["animation fade, match:namespace .*swayosd.*"];
   };
 }

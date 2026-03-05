@@ -8,7 +8,7 @@
   "modules-center": ["cpu", "memory", "temperature"],
   "modules-right": [
     "tray",
-    "pulseaudio",
+    "wireplumber",
     "battery",
     "backlight",
     "clock",

@@ -28,24 +28,18 @@
     "on-click-right": "swaync-client -d -sw",
     "escape": true
   },
-  "pulseaudio": {
-    "format": "{icon}  {volume}%",
-    "format-bluetooth": "{icon} {volume}%  {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": "󰝟 0%",
-    "format-source": " {volume}%",
+  "wireplumber": {
+    "on-click": "pwvucontrol",
+    "on-click-right": "swayosd-client --output-volume mute-toggle",
+    "on-scroll-down": "swayosd-client --output-volume -1",
+    "on-scroll-up": "swayosd-client --output-volume +1",
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟",
+    "format-source": "",
     "format-source-muted": "",
     "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
       "default": ["", "", ""]
-    },
-    "on-click": "pavucontrol",
-    "on-click-right": "pamixer --toggle-mute"
+    }
   },
   "cpu": {
     "format": "  {usage}%",

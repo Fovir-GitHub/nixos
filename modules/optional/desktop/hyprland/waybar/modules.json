@@ -82,7 +82,9 @@
     "format-charging": "  {capacity}%",
     "format-plugged": "  {capacity}%",
     "format-alt": "{time}  {icon}",
-    "format-icons": ["", "", "", "", ""]
+    "format-icons": ["", "", "", "", ""],
+    "on-click": "powerprofilesctl set performance && notify-send -u low \"Switch to $(powerprofilesctl get)\"",
+    "on-click-right": "powerprofilesctl set power-saver && notify-send -u low \"Switch to $(powerprofilesctl get)\""
   },
   "clock": {
     "format": " {:%a %b %d %H:%M:%S}",

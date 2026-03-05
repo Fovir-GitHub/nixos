@@ -4,7 +4,7 @@
       text = ''
         #!/usr/bin/env bash
         hyprctl keyword "device[uniw0001:00-093a:0274-touchpad]:enabled" false
-        notify-send "Touchpad Disabled!"
+        notify-send -u low "Touchpad Disabled!"
       '';
       executable = true;
     };
@@ -12,7 +12,7 @@
       text = ''
         #!/usr/bin/env bash
         hyprctl keyword "device[uniw0001:00-093a:0274-touchpad]:enabled" true
-        notify-send "Touchpad Enabled!"
+        notify-send -u low "Touchpad Enabled!"
       '';
       executable = true;
     };

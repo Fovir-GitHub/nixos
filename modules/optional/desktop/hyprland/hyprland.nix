@@ -117,6 +117,7 @@
         "windowsOut,1,3.0,macReal,popin"
         "workspaces,1,5.2,macReal,slide"
       ];
+      workspace = ["6,monitor:HDMI-A-1,default:true"];
     };
   };
 

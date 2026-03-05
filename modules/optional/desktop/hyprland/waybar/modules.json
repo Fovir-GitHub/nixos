@@ -6,7 +6,8 @@
   },
   "hyprland/window": {
     "format": "{initialTitle}",
-    "icon": true
+    "icon": true,
+    "icon-size": 16
   },
   "hyprland/workspaces": {
     "disable-scroll": false,

@@ -101,6 +101,7 @@
         "browser.ctrlTab.sortByRecentlyUsed" = true;
         "browser.ml.linkPreview.enabled" = false;
         "browser.sessionstore.max_tabs_undo" = 3;
+        "browser.sessionstore.restore_on_demand" = true;
         "browser.startup.page" = 3;
         "browser.tabs.fadeOutExplicitlyUnloadedTabs" = true;
         "browser.tabs.unloadOnLowMemory" = true;

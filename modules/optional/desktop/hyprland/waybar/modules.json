@@ -53,11 +53,13 @@
   },
   "cpu": {
     "format": "  {usage}%",
-    "tooltip": true
+    "tooltip": true,
+    "interval": 1
   },
   "memory": {
     "format": "  {used} / {total} GiB",
-    "tooltip": true
+    "tooltip": true,
+    "interval": 1
   },
   "temperature": {
     "interval": 10,

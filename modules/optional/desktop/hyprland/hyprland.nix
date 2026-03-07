@@ -62,7 +62,7 @@
         border_size = 3;
         gaps_in = 2;
         gaps_out = 4;
-        allow_tearing = true;
+        allow_tearing = false;
       };
       decoration = {
         active_opacity = 1.0;
@@ -120,13 +120,7 @@
         "workspaces,1,5.2,macReal,slide"
       ];
       workspace = ["6,monitor:HDMI-A-1,default:true"];
-      env = [
-        "AQ_DRM_DEVICES,/dev/dri/card1:/dev/dri/card0"
-        "GBM_BACKEND,nvidia-drm"
-        "LIBVA_DRIVER_NAME,nvidia"
-        "__GLX_VENDOR_LIBRARY_NAME,nvidia"
-        "__GL_VRR_ALLOWED,1"
-      ];
+      render.direct_scanout = 1;
     };
   };
 

@@ -11,6 +11,7 @@
       monitor =
         [",preferred,auto,1"]
         ++ monitor-config;
+      misc.vrr = 2;
       xwayland.force_zero_scaling = true;
       "$mod" = "SUPER";
       bind = [

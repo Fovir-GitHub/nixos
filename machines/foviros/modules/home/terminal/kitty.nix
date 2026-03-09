@@ -17,7 +17,10 @@ in {
       "ctrl+shift+c" = "copy_to_clipboard";
       "ctrl+shift+v" = "paste_from_clipboard";
     };
-    settings.clear_all_shortcuts = "yes";
+    settings = {
+      clear_all_shortcuts = "yes";
+      term = "xterm-256color";
+    };
     shellIntegration = {
       enableBashIntegration = true;
       enableZshIntegration = true;

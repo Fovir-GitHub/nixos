@@ -168,27 +168,6 @@
       };
     }
     {
-      action.__raw = ''
-        function()
-          local height = vim.api.nvim_win_get_height(0)
-          local target = math.floor(height * 0.3)
-          local current = vim.fn.winline()
-          local scroll = current - target
-          if scroll > 0 then
-            vim.cmd('normal! ' .. scroll .. '\x05') -- Ctrl-E
-          elseif scroll < 0 then
-            vim.cmd('normal! ' .. math.abs(scroll) .. '\x19') -- Ctrl-Y
-          end
-        end
-      '';
-      mode = "n";
-      key = "zz";
-      options = {
-        desc = "Move current line to 30% of window";
-        silent = true;
-      };
-    }
-    {
       action = ":sort<CR>";
       key = "<leader>s";
       mode = "v";

@@ -9,6 +9,7 @@
     ./just.nix
     ./lang
     ./live-server.nix
+    ./llama-cpp.nix
     ./neovide.nix
     ./nixvim
     ./opencode.nix

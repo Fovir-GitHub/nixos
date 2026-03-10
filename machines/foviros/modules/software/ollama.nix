@@ -33,6 +33,7 @@
       "qwen3-coder:30b-a3b-q4_K_M"
       "qwen3-vl:30b"
       "qwen3.5:27b"
+      "qwen3:30b"
       "translategemma:27b"
     ];
     syncModels = true;

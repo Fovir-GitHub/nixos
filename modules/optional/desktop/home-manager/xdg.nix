@@ -38,6 +38,7 @@
         };
       };
       mimeApps = let
+        archiver = ["peazip.desktop"];
         browser = ["firefox-devedition.desktop"];
         filemanager = ["nemo.desktop"];
         image-viewer = ["oculante.desktop"];
@@ -71,6 +72,12 @@
           "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = libreoffice-writer;
           "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" = libreoffice-calc;
           "application/vnd.openxmlformats-officedocument.presentationml.presentation" = libreoffice-presentation;
+
+          "application/gzip" = archiver;
+          "application/vnd.rar" = archiver;
+          "application/x-7z-compressed" = archiver;
+          "application/x-tar" = archiver;
+          "application/zip" = archiver;
         };
       };
     };

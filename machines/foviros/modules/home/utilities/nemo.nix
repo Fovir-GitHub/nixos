@@ -16,6 +16,7 @@
   };
   xdg.desktopEntries.nemo = {
     exec = "${config.home.homeDirectory}/.local/bin/run-nemo";
+    icon = "nemo";
     name = "Nemo";
   };
   wayland.windowManager.hyprland.settings.bind = ["$mod,E,exec,nemo"];

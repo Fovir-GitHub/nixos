@@ -19,6 +19,7 @@
     package = pkgs.ollama-cuda;
     environmentVariables = {
       OLLAMA_CONTEXT_LENGTH = "64000";
+      OLLAMA_THREADS = "12";
     };
     host = "0.0.0.0";
     loadModels = [

@@ -43,6 +43,7 @@ in {
     htop.enable = true;
     ripgrep.enable = true;
     yazi.enable = true;
+    zoxide.enable = true;
   };
 
   wayland.windowManager.hyprland.settings.bind = ["$mod, Y, exec, kitty yazi"];

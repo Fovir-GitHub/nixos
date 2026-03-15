@@ -28,6 +28,7 @@
       "llama3.2-vision:11b"
       "llama3.2:3b"
       "llama3:8b"
+      "nomic-embed-text:v1.5"
       "qwen2.5-coder:14b"
       "qwen2.5-coder:32b-instruct-q3_K_S"
       "qwen2.5-coder:32b-instruct-q4_0"

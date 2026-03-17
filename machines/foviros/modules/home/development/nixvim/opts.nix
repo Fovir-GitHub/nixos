@@ -4,10 +4,10 @@
   '';
 
   extraConfigLua = ''
-    vim.g.neovide_floating_blur_amount_x = 2.0
-    vim.g.neovide_floating_blur_amount_y = 2.0
-    vim.g.neovide_opacity = 0.9
-    vim.g.neovide_normal_opacity = 0.9
+    vim.g.neovide_floating_blur_amount_x = 1.0
+    vim.g.neovide_floating_blur_amount_y = 1.0
+    vim.g.neovide_opacity = 1.0
+    vim.g.neovide_normal_opacity = 1.0
     vim.o.shell="${pkgs.zsh}/bin/zsh"
     vim.g.user_emmet_expandabbr_key = "<M-,>";
 

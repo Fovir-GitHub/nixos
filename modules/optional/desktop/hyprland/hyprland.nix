@@ -59,39 +59,15 @@
       general = {
         "col.active_border" = "rgba(5e9bf388)";
         "col.inactive_border" = "rgba(ffffff22)";
+        allow_tearing = false;
         border_size = 3;
         gaps_in = 2;
-        gaps_out = 4;
-        allow_tearing = false;
+        gaps_out = 1;
       };
       decoration = {
-        active_opacity = 1.0;
-        fullscreen_opacity = 1.0;
-        inactive_opacity = 0.96;
+        blur.enabled = false;
         rounding = 12;
-        blur = {
-          enabled = true;
-
-          brightness = 1.0;
-          contrast = 0.9;
-          ignore_opacity = false;
-          new_optimizations = true;
-          noise = 0.03;
-          passes = 3;
-          size = 11;
-          vibrancy = 0.15;
-          vibrancy_darkness = 0.1;
-        };
-        shadow = {
-          enabled = true;
-
-          color = "rgba(00000066)";
-          ignore_window = false;
-          offset = "0, 4";
-          range = 18;
-          render_power = 3;
-          scale = 0.97;
-        };
+        shadow.enabled = false;
       };
       input = {
         numlock_by_default = true;

@@ -12,7 +12,7 @@
     ./gotify-fail2ban.nix
     ./gotify.nix
     ./karakeep.nix
-    ./libretranslate.nix
+    ./mytrix.nix
     ./openlist.nix
     ./polaris.nix
     ./postgres.nix

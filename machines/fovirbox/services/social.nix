@@ -16,6 +16,11 @@
     "gotosocial" = {
       autoStart = true;
       environment = import ../values/gotosocial-env.nix;
+      extraOptions = [
+        "--cpus=0.5"
+        "--memory=512m"
+        "--memory-swap=512m"
+      ];
       image = "docker.io/superseriousbusiness/gotosocial:latest";
       ports = ["127.0.0.1:1112:8080"];
       user = "1000:1000";

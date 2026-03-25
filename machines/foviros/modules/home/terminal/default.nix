@@ -46,5 +46,8 @@ in {
     zoxide.enable = true;
   };
 
-  wayland.windowManager.hyprland.settings.bind = ["$mod, Y, exec, kitty yazi"];
+  wayland.windowManager.hyprland.settings.bind = [
+    "$mod, B, exec, [fullscreen] kitty btop"
+    "$mod, Y, exec, kitty yazi"
+  ];
 }

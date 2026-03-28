@@ -4,6 +4,7 @@
     ./clangd.nix
     ./cmake.nix
     ./cssls.nix
+    ./golangci_lint_ls.nix
     ./gopls.nix
     ./html.nix
     ./jdtls.nix

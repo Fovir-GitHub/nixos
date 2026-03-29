@@ -3,6 +3,7 @@
     ./alpaca.nix
     ./anki.nix
     ./archiver.nix
+    ./fluffychat.nix
     ./gotify-desktop.nix
     ./gpg.nix
     ./keepassxc.nix

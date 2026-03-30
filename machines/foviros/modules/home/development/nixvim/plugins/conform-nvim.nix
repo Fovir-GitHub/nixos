@@ -13,7 +13,7 @@
         "_" = ["prettier"];
         "c" = ["clang_format"];
         "cpp" = ["clang_format"];
-        "go" = ["gofmt"];
+        "go" = ["gofumpt"];
         "java" = ["google-java-format"];
         "nix" = ["alejandra"];
         "python" = ["black"];
@@ -21,6 +21,7 @@
         "tex" = ["latexindent"];
         "toml" = ["taplo"];
       };
+      formatters.gofumpt.append_args = ["-extra"];
     };
   };
 }

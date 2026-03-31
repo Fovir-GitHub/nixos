@@ -13,7 +13,7 @@
         "_" = ["prettier"];
         "c" = ["clang_format"];
         "cpp" = ["clang_format"];
-        "go" = ["gofumpt"];
+        "go" = ["goimports" "gofumpt"];
         "java" = ["google-java-format"];
         "nix" = ["alejandra"];
         "python" = ["black"];

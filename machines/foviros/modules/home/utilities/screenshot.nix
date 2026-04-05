@@ -5,7 +5,6 @@
       jq
       kooha
       slurp
-      swappy
       tesseract
     ];
     file = {
@@ -25,6 +24,21 @@
           grim -g "$(slurp)" - | swappy -f -
         '';
       };
+    };
+  };
+
+  programs.swappy = {
+    enable = true;
+    settings.Default = {
+      auto_save = false;
+      early_exit = true;
+      fill_shape = false;
+      line_size = 5;
+      paint_mode = "brush";
+      save_dir = "$HOME/Pictures/Screenshots";
+      save_filename_format = "SCREENSHOT-%Y-%m-%d-%H:%M:%S.png";
+      show_panel = false;
+      text_size = 20;
     };
   };
 

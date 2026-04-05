@@ -11,7 +11,6 @@
     ./fusion.nix
     ./gotify-fail2ban.nix
     ./gotify.nix
-    ./karakeep.nix
     ./mytrix.nix
     ./openlist.nix
     ./polaris.nix

@@ -85,11 +85,6 @@
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/simple-tab-groups@drive4ik/latest.xpi";
           installation_mode = "force_installed";
         };
-        # Karakeep
-        "addon@karakeep.app" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/addon@karakeep.app/latest.xpi";
-          installation_mode = "force_installed";
-        };
         # Auto Tab Discard
         "{c2c003ee-bd69-42a2-b0e9-6f34222cb046}" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/4045009/latest.xpi";

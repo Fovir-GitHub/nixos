@@ -44,7 +44,7 @@
     "on-scroll-down": "swayosd-client --output-volume -1",
     "on-scroll-up": "swayosd-client --output-volume +1",
     "format": "{icon} {volume}%",
-    "format-muted": "󰝟",
+    "format-muted": "󰝟 0%",
     "format-source": "",
     "format-source-muted": "",
     "format-icons": {

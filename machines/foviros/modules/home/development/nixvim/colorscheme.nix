@@ -31,7 +31,6 @@
           numbers.bold = true;
         };
         transparent = false;
-        variants.modus_vivendi = "tinted";
         on_highlights = ''
           function(hl, colors)
             hl.FloatBorder = { fg = colors.border }

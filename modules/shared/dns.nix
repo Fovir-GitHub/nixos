@@ -1,16 +1,55 @@
-{lib, ...}: {
-  services.resolved = {
-    enable = true;
-
-    settings.Resolve = {
-      DnsOverTLS = "opportunistic";
-      Domains = ["~."];
-      FallbackDns = import ../values/nameserver.nix;
-    };
+{lib, ...}:
+with lib; {
+  environment.etc."resolv.conf" = mkForce {
+    mode = "0644";
+    text = ''
+      # Managed by unbound
+      nameserver 127.0.0.1
+      nameserver ::1
+    '';
   };
 
   networking = {
     dhcpcd.extraConfig = "nohook resolv.conf";
-    resolvconf.enable = lib.mkForce false;
+    firewall.enable = false;
+    nameservers = [
+      "127.0.0.1"
+      "::1"
+    ];
+    networkmanager = {
+      dns = "none";
+      enable = true;
+    };
+    resolvconf.enable = false;
+  };
+
+  services.unbound = {
+    enable = true;
+    settings = {
+      server = {
+        do-ip4 = true;
+        do-ip6 = true;
+        do-tcp = true;
+        do-udp = true;
+        hide-identity = true;
+        hide-version = true;
+        interface = [
+          "127.0.0.1"
+          "::1"
+        ];
+        num-threads = 2;
+        prefetch = true;
+        qname-minimisation = true;
+        use-syslog = true;
+        verbosity = 1;
+      };
+      forward-zone = [
+        {
+          forward-addr = import ../values/nameserver.nix;
+          forward-tls-upstream = true;
+          name = ".";
+        }
+      ];
+    };
   };
 }

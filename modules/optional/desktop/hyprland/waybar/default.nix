@@ -36,8 +36,8 @@
       enable = true;
 
       settings = {
-        timeout = 3;
-        timeout-low = 1;
+        timeout = 5;
+        timeout-low = 3;
       };
     };
     swayosd.enable = true;

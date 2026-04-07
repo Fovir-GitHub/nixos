@@ -2,9 +2,9 @@
   programs.opencode = {
     enable = true;
 
+    tui.theme = "catppuccin-macchiato";
     settings = {
       autoupdate = true;
-      theme = "catppuccin-macchiato";
       provider = {
         ollama = {
           models = let

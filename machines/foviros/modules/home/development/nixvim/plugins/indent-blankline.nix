@@ -1,9 +1,9 @@
 {...}: {
   highlight = {
-    IndentYellow = {bg = "#434437";};
-    IndentGreen = {bg = "#2f4440";};
-    IndentRed = {bg = "#433054";};
-    IndentBlue = {bg = "#284251";};
+    IndentYellow = {bg = "#5f5f87";};
+    IndentGreen = {bg = "#4f6a5f";};
+    IndentRed = {bg = "#6a4f5f";};
+    IndentBlue = {bg = "#4f5f7a";};
   };
 
   plugins.indent-blankline = {

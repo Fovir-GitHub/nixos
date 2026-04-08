@@ -1,6 +1,6 @@
 {...}: {
   virtualisation.oci-containers.containers."mytrix" = {
-    image = "ghcr.io/fovir-github/mytrix:main";
+    image = "ghcr.io/fovir-github/mytrix:latest";
 
     environment = import ../values/mytrix-env.nix;
     pull = "always";

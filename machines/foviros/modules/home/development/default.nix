@@ -18,5 +18,6 @@
     ./usbutils.nix
     ./vscodium.nix
     ./wakatime.nix
+    ./weka.nix
   ];
 }

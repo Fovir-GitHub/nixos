@@ -25,10 +25,11 @@
         executable = true;
         text = ''
           current=$(swaymsg -t get_workspaces | ${pkgs.jq}/bin/jq -r '.[] | select(.focused) | .name')
+          current_output=$(swaymsg -t get_workspaces | ${pkgs.jq}/bin/jq -r '.[] | select(.focused) | .output')
           if [ "$current" = "-1" ]; then
             swaymsg workspace back_and_forth
           else
-            swaymsg -- workspace -1
+            swaymsg "workspace -1; move workspace to output $current_output"
           fi
         '';
       };

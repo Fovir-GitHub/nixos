@@ -97,6 +97,8 @@
         "browser.ml.linkPreview.enabled" = false;
         "browser.sessionstore.max_tabs_undo" = 3;
         "browser.sessionstore.restore_on_demand" = true;
+        "browser.sessionstore.restore_pinned_tabs_on_demand" = true;
+        "browser.sessionstore.restore_tabs_lazily" = true;
         "browser.startup.page" = 3;
         "browser.tabs.fadeOutExplicitlyUnloadedTabs" = true;
         "browser.tabs.unloadOnLowMemory" = true;

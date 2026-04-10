@@ -13,7 +13,7 @@ in {
     sway.config = {
       window.commands = [
         {
-          command = "move container to workspace 10";
+          command = "move container to workspace -1";
           criteria = {class = sciName;};
         }
       ];

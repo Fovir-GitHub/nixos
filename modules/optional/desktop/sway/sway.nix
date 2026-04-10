@@ -21,6 +21,47 @@
           fi
         '';
       };
+      ".local/bin/toggle-special" = {
+        executable = true;
+        text = ''
+          current=$(swaymsg -t get_workspaces | ${pkgs.jq}/bin/jq -r '.[] | select(.focused) | .name')
+          if [ "$current" = "-1" ]; then
+            swaymsg workspace back_and_forth
+          else
+            swaymsg -- workspace -1
+          fi
+        '';
+      };
+      ".local/bin/ws-next" = {
+        executable = true;
+        text = ''
+          current=$(swaymsg -t get_workspaces | ${pkgs.jq}/bin/jq -r '.[] | select(.focused) | .num')
+          if [ "$current" -lt 1 ]; then
+            exit 0
+          fi
+          max=$(swaymsg -t get_workspaces | ${pkgs.jq}/bin/jq -r '[.[] | select(.name != "special")] | max_by(.num) | .num')
+          if [ "$current" -ge "$max" ]; then
+            swaymsg workspace 1
+          else
+            swaymsg workspace next
+          fi
+        '';
+      };
+      ".local/bin/ws-prev" = {
+        executable = true;
+        text = ''
+          current=$(swaymsg -t get_workspaces | ${pkgs.jq}/bin/jq -r '.[] | select(.focused) | .num')
+          if [ "$current" -lt 1 ]; then
+            exit 0
+          fi
+          max=$(swaymsg -t get_workspaces | ${pkgs.jq}/bin/jq -r '[.[] | select(.name != "special")] | max_by(.num) | .num')
+          if [ "$current" -le 1 ]; then
+            swaymsg workspace $max
+          else
+            swaymsg workspace prev
+          fi
+        '';
+      };
     };
     packages = with pkgs; [jq];
   };
@@ -64,15 +105,15 @@
             criteria = {app_id = "btop";};
           }
           {
-            command = "move container to workspace 10";
+            command = "move container to workspace -1";
             criteria = {app_id = "org.keepassxc.KeePassXC";};
           }
           {
-            command = "move container to workspace 10";
+            command = "move container to workspace -1";
             criteria = {app_id = "strawberry";};
           }
           {
-            command = "move container to workspace 10";
+            command = "move container to workspace -1";
             criteria = {app_id = "thunderbird";};
           }
         ];
@@ -93,11 +134,11 @@
         "${mod}+7" = "workspace number 7";
         "${mod}+8" = "workspace number 8";
         "${mod}+9" = "workspace number 9";
-        "${mod}+Tab" = "workspace number 10";
+        "${mod}+Tab" = "exec toggle-special";
         "${mod}+b" = "exec kitty --app-id btop btop";
         "${mod}+bracketleft" = "exec move-prev";
         "${mod}+bracketright" = "exec move-next";
-        "${mod}+comma" = "workspace prev";
+        "${mod}+comma" = "exec ws-prev";
         "${mod}+f" = "fullscreen toggle";
         "${mod}+h" = "focus left";
         "${mod}+j" = "focus down";
@@ -106,7 +147,7 @@
         "${mod}+n" = "exec neovide";
         "${mod}+o" = "exec screenshot-ocr";
         "${mod}+p" = "exec swaylock";
-        "${mod}+period" = "workspace next";
+        "${mod}+period" = "exec ws-next";
         "${mod}+q" = "kill";
         "${mod}+r" = "exec restart-waybar";
         "${mod}+s" = "exec screenshot-area";
@@ -147,7 +188,6 @@
     };
     extraConfig = ''
       seat * hide_cursor 1000
-      workspace_auto_back_and_forth yes
     '';
     extraOptions = ["--unsupported-gpu"];
     extraSessionCommands = ''

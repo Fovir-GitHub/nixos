@@ -192,6 +192,8 @@
     extraOptions = ["--unsupported-gpu"];
     extraSessionCommands = ''
       export WLR_DRM_DEVICES=/dev/dri/card1:/dev/dri/card0
+      export GTK_THEME=Adwaita-dark
+      export GTK2_RC_FILES=${pkgs.gnome-themes-extra}/share/themes/Adwaita-dark/gtk-2.0/gtkrc
     '';
   };
 }

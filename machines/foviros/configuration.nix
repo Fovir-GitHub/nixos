@@ -4,16 +4,8 @@
   imports = let
     username = "fovir";
   in [
-    (import ../../modules/optional/desktop/hyprland {
-      username = username;
-      avatar-path = ./values/profile.png;
-      monitor-config = [
-        "HDMI-A-1,2560x1600@130.00,auto,1.6,transform,1"
-        "eDP-1,2560x1440@165.00,0x0,1.6"
-        "eDP-2,2560x1440@165.00,0x0,1.6"
-      ];
-    })
-    (import ./modules {username = username;})
+    (import ../../modules/optional/desktop/sway {inherit username;})
+    (import ./modules {inherit username;})
     ../../modules/optional/boot-loader/systemd-boot.nix
     ../../modules/optional/kernels/zen.nix
     ../../modules/optional/virtualisation/podman.nix

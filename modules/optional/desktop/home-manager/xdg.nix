@@ -10,15 +10,6 @@
       configHome = "${config.home.homeDirectory}/.config";
       dataHome = "${config.home.homeDirectory}/.local/share";
       stateHome = "${config.home.homeDirectory}/.local/state";
-      portal = {
-        enable = true;
-
-        config.common.default = "hyprland";
-        extraPortals = [
-          pkgs.xdg-desktop-portal-gtk
-          pkgs.xdg-desktop-portal-hyprland
-        ];
-      };
       userDirs = {
         enable = true;
 

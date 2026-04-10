@@ -60,20 +60,20 @@
         titlebar = false;
         commands = [
           {
-            command = "move scratchpad";
-            criteria = {app_id = "strawberry";};
-          }
-          {
-            command = "move scratchpad";
-            criteria = {app_id = "thunderbird";};
-          }
-          {
             command = "fullscreen enable";
             criteria = {app_id = "btop";};
           }
           {
-            command = "move scratchpad";
+            command = "move container to workspace 10";
             criteria = {app_id = "org.keepassxc.KeePassXC";};
+          }
+          {
+            command = "move container to workspace 10";
+            criteria = {app_id = "strawberry";};
+          }
+          {
+            command = "move container to workspace 10";
+            criteria = {app_id = "thunderbird";};
           }
         ];
       };
@@ -93,8 +93,7 @@
         "${mod}+7" = "workspace number 7";
         "${mod}+8" = "workspace number 8";
         "${mod}+9" = "workspace number 9";
-        "${mod}+Shift+Space" = "move scratchpad";
-        "${mod}+Tab" = "scratchpad show";
+        "${mod}+Tab" = "workspace number 10";
         "${mod}+b" = "exec kitty --app-id btop btop";
         "${mod}+bracketleft" = "exec move-prev";
         "${mod}+bracketright" = "exec move-next";
@@ -148,6 +147,7 @@
     };
     extraConfig = ''
       seat * hide_cursor 1000
+      workspace_auto_back_and_forth yes
     '';
     extraOptions = ["--unsupported-gpu"];
     extraSessionCommands = ''

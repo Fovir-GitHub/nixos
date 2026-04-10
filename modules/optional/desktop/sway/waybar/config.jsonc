@@ -1,0 +1,35 @@
+// -*- mode: jsonc -*-
+[
+  {
+    "output": "!HDMI-A-1",
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": ["custom/nixos", "sway/workspaces", "sway/window"],
+    "modules-center": ["cpu", "memory", "network", "temperature"],
+    "modules-right": [
+      "tray",
+      "wireplumber",
+      "battery",
+      "backlight",
+      "clock",
+      "custom/swaync",
+    ],
+    "include": ["~/.config/waybar/modules.json"],
+  },
+  {
+    "output": "HDMI-A-1",
+    "name": "external",
+    "modules-left": ["custom/nixos", "sway/workspaces"],
+    "modules-center": ["cpu", "memory"],
+    "modules-right": [
+      "wireplumber",
+      "battery",
+      "backlight",
+      "clock",
+      "custom/swaync",
+    ],
+    "include": ["~/.config/waybar/modules.json"],
+  },
+]

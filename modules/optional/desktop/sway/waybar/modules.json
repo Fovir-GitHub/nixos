@@ -1,0 +1,103 @@
+{
+  "custom/nixos": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "wlogout"
+  },
+  "sway/window": {
+    "format": "{app_id}",
+    "icon": true,
+    "icon-size": 16
+  },
+  "sway/workspaces": {
+    "disable-scroll": false,
+    "all-outputs": true,
+    "warp-on-scroll": true,
+    "on-scroll-up": "swaymsg workspace prev",
+    "on-scroll-down": "swaymsg workspace next",
+    "format": "{name}",
+    "format-icons": {
+      "urgent": "",
+      "active": "",
+      "default": ""
+    }
+  },
+  "custom/swaync": {
+    "tooltip": false,
+    "format": "{icon}  {text}",
+    "format-icons": {
+      "notification": "󰂚",
+      "none": "󰂜",
+      "dnd-notification": "󰂛",
+      "dnd-none": "󰂛"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+  "wireplumber": {
+    "on-click": "pwvucontrol",
+    "on-click-right": "swayosd-client --output-volume mute-toggle",
+    "on-scroll-down": "swayosd-client --output-volume -1",
+    "on-scroll-up": "swayosd-client --output-volume +1",
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟 0%",
+    "format-source": "",
+    "format-source-muted": "",
+    "format-icons": {
+      "default": ["", "", ""]
+    }
+  },
+  "cpu": {
+    "format": "  {usage}%",
+    "tooltip": true,
+    "interval": 1
+  },
+  "memory": {
+    "format": "  {used} / {total} GiB",
+    "tooltip": true,
+    "interval": 1
+  },
+  "temperature": {
+    "interval": 10,
+    "critical-threshold": 100,
+    "format-critical": " {temperatureC}",
+    "format": " {temperatureC}°C"
+  },
+  "network": {
+    "format": " {bandwidthTotalBytes}  {bandwidthDownBytes}",
+    "interval": 1
+  },
+  "backlight": {
+    "device": "amdgpu_bl1",
+    "format": "{icon}  {percent}%",
+    "format-icons": ["󰃞", "󰃟", "󰃠"],
+    "on-scroll-up": "brightnessctl set 5%+",
+    "on-scroll-down": "brightnessctl set 5%-"
+  },
+  "tray": {
+    "icon-size": 14,
+    "spacing": 8
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon}  {capacity}%",
+    "format-full": "{icon}  {capacity}%",
+    "format-charging": "󰂄  {capacity}%",
+    "format-plugged": "󰂄  {capacity}%",
+    "format-alt": "{time}  {icon}",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂂", "󱟢"],
+    "on-click": "powerprofilesctl set performance && notify-send -u low \"Switch to $(powerprofilesctl get)\"",
+    "on-click-right": "powerprofilesctl set power-saver && notify-send -u low \"Switch to $(powerprofilesctl get)\""
+  },
+  "clock": {
+    "format": " {:%a %b %d %H:%M:%S}",
+    "interval": 1
+  }
+}

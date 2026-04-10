@@ -17,7 +17,6 @@
     wayland.windowManager.hyprland.settings.exec-once = [
       "fcitx5-remote -r"
       "fcitx5 -d --replace &"
-      "fcitx5-remote -r"
     ];
 
     xdg = let

@@ -140,6 +140,8 @@
         "${mod}+bracketleft" = "exec move-prev";
         "${mod}+bracketright" = "exec move-next";
         "${mod}+comma" = "exec ws-prev";
+        "${mod}+d" = "exec swaync-client -d -sw";
+        "${mod}+e" = "exec nemo";
         "${mod}+f" = "fullscreen toggle";
         "${mod}+h" = "focus left";
         "${mod}+j" = "focus down";

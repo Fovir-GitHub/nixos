@@ -3,7 +3,6 @@
     "separator": " ",
   },
   "logo": {
-    "source": "~/.config/fastfetch/logo.txt",
     "padding": {
       "top": 0,
     },
@@ -160,7 +159,7 @@
       "key": "│ ╠ Icons   │",
       "keyColor": "blue",
       "outputColor": "blue",
-      "format": "{1} {2}",
+      "format": "{2}",
     },
     {
       "type": "title",

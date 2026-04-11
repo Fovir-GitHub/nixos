@@ -172,6 +172,7 @@
         autostart = [
           "fcitx5 -d --replace"
           "fcitx5-remote -r"
+          "gotify-desktop"
           "keepassxc"
           "nm-applet"
           "strawberry"

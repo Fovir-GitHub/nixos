@@ -23,13 +23,7 @@
     "name": "external",
     "modules-left": ["custom/nixos", "sway/workspaces"],
     "modules-center": ["cpu", "memory"],
-    "modules-right": [
-      "wireplumber",
-      "battery",
-      "backlight",
-      "clock",
-      "custom/swaync",
-    ],
+    "modules-right": ["battery", "clock", "custom/swaync"],
     "include": ["~/.config/waybar/modules.json"],
   },
 ]

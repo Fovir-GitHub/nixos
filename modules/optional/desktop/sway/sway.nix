@@ -172,6 +172,7 @@
       floating.modifier = mod;
       startup = let
         autostart = [
+          "blueman-applet"
           "fcitx5 -d --replace"
           "fcitx5-remote -r"
           "gotify-desktop"

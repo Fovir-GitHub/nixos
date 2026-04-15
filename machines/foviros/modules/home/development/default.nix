@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    # ./vscodium.nix
     ./android.nix
     ./dconf.nix
     ./delta.nix
@@ -16,7 +17,6 @@
     ./podman-compose.nix
     ./sui.nix
     ./usbutils.nix
-    ./vscodium.nix
     ./wakatime.nix
     ./weka.nix
   ];

@@ -106,6 +106,10 @@
             criteria = {app_id = "btop";};
           }
           {
+            command = "fullscreen enable";
+            criteria = {app_id = "yazi";};
+          }
+          {
             command = "move container to workspace -1";
             criteria = {app_id = "org.keepassxc.KeePassXC";};
           }
@@ -137,6 +141,7 @@
         "${mod}+9" = "workspace number 9";
         "${mod}+Tab" = "exec toggle-special";
         "${mod}+b" = "exec kitty --app-id btop btop";
+        "${mod}+y" = "exec kitty --app-id yazi yazi";
         "${mod}+bracketleft" = "exec move-prev";
         "${mod}+bracketright" = "exec move-next";
         "${mod}+comma" = "exec ws-prev";

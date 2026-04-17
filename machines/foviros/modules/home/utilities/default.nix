@@ -13,6 +13,7 @@
     ./lutris.nix
     ./nemo.nix
     ./qalculate.nix
+    ./qbittorrent.nix
     ./screenshot.nix
     ./syncthing.nix
     ./thunderbird.nix

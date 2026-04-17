@@ -39,6 +39,7 @@
         "uBlock0@raymondhill.net" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
           installation_mode = "force_installed";
+          private_browsing = true;
         };
         # KeepassXC
         "keepassxc-browser@keepassxc.org" = {
@@ -49,16 +50,19 @@
         "{74145f27-f039-47ce-a470-a662b129930a}" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/{74145f27-f039-47ce-a470-a662b129930a}/latest.xpi";
           installation_mode = "force_installed";
+          private_browsing = true;
         };
         # KISS Translator
         "{fb25c100-22ce-4d5a-be7e-75f3d6f0fc13}" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/{fb25c100-22ce-4d5a-be7e-75f3d6f0fc13}/latest.xpi";
           installation_mode = "force_installed";
+          private_browsing = true;
         };
         # TWP - Translate Web Pages
         "{036a55b4-5e72-4d05-a06c-cba2dfcc134a}" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/{036a55b4-5e72-4d05-a06c-cba2dfcc134a}/latest.xpi";
           installation_mode = "force_installed";
+          private_browsing = true;
         };
         # User-Agent Switcher and Manager
         "{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}" = {
@@ -69,6 +73,7 @@
         "wappalyzer@crunchlabz.com" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/wappalyzer@crunchlabz.com/latest.xpi";
           installation_mode = "force_installed";
+          private_browsing = true;
         };
         # Vimium
         "{d7742d87-e61d-4b78-b8a1-b469842139fa}" = {

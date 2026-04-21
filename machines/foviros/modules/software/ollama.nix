@@ -21,22 +21,13 @@
     host = "0.0.0.0";
     loadModels = [
       "gemma3:12b"
+      "gemma4:e4b"
       "gpt-oss:20b"
-      "llama3.2-vision:11b"
-      "llama3.2:3b"
-      "llama3:8b"
       "nomic-embed-text:v1.5"
-      "qwen2.5-coder:14b"
       "qwen2.5-coder:32b-instruct-q3_K_S"
-      "qwen2.5-coder:32b-instruct-q4_0"
-      "qwen3-coder:30b"
       "qwen3-coder:30b-a3b-q4_K_M"
       "qwen3-vl:30b"
       "qwen3.5:27b"
-      "qwen3.5:4b"
-      "qwen3:30b"
-      "qwen3:8b"
-      "translategemma:27b"
     ];
     syncModels = true;
   };

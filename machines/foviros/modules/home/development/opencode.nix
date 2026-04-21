@@ -19,8 +19,6 @@
               "gpt-oss:20b"
               "qwen2.5-coder:14b"
               "qwen2.5-coder:32b-instruct-q3_K_S"
-              "qwen2.5-coder:32b-instruct-q4_0"
-              "qwen3-coder:30b"
               "qwen3-coder:30b-a3b-q4_K_M"
             ]);
           name = "Ollama (local)";

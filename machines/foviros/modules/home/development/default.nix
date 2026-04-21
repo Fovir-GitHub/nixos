@@ -12,6 +12,7 @@
     ./live-server.nix
     ./llama-cpp.nix
     ./neovide.nix
+    ./net.nix
     ./nixvim
     ./opencode.nix
     ./podman-compose.nix

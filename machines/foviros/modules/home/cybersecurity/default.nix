@@ -1,11 +1,7 @@
-{
-  inputs,
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   home.packages = with pkgs; [
+    dsniff
     ghidra
-    inputs.nixpkgs-25-05.legacyPackages.${pkgs.stdenv.hostPlatform.system}.dsniff
     nmap
     sqlmap
     zap

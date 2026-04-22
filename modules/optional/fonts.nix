@@ -1,16 +1,15 @@
 {pkgs, ...}: {
   fonts = {
+    enableDefaultPackages = true;
     packages = with pkgs; [
-      nerd-fonts.jetbrains-mono
       lxgw-wenkai
+      nerd-fonts.jetbrains-mono
     ];
 
-    fontconfig = {
-      defaultFonts = {
-        serif = ["JetBrainsMono Nerd Font Mono" "LXGW WenKai Mono"];
-        sansSerif = ["JetBrainsMono Nerd Font Mono" "LXGW WenKai Mono"];
-        monospace = ["JetBrainsMono Nerd Font Mono" "LXGW WenKai Mono"];
-      };
+    fontconfig.defaultFonts = {
+      monospace = ["JetBrainsMono Nerd Font Mono" "LXGW WenKai Mono"];
+      sansSerif = ["JetBrainsMono Nerd Font Mono" "LXGW WenKai Mono"];
+      serif = ["JetBrainsMono Nerd Font Mono" "LXGW WenKai Mono"];
     };
   };
 }

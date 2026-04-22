@@ -4,6 +4,7 @@
 
     settings = {
       fork = true;
+      maximized = true;
       srgb = true;
       font = {
         normal = ["JetBrainsMono Nerd Font Mono"];

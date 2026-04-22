@@ -30,7 +30,7 @@ in {
       mv = "mv --verbose";
       open = "xdg-open"; # Open.
       rm = "rm -v";
-      tempdir = "cd $(mktemp -d)";
+      tmp = "cd $(mktemp -d)";
     };
 
     initContent = ''

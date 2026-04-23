@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    # ./llama-cpp.nix
     # ./vscodium.nix
     ./android.nix
     ./dconf.nix
@@ -10,7 +11,6 @@
     ./just.nix
     ./lang
     ./live-server.nix
-    ./llama-cpp.nix
     ./neovide.nix
     ./net.nix
     ./nixvim

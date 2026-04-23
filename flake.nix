@@ -13,10 +13,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
       url = "github:nix-community/home-manager";
     };
-    hyprpanel = {
-      inputs.nixpkgs.follows = "nixpkgs";
-      url = "github:Jas-SinghFSU/HyprPanel";
-    };
     hyprshell = {
       inputs.hyprland.follows = "nixpkgs";
       url = "github:H3rmt/hyprshell?ref=hyprshell-release";

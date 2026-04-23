@@ -57,8 +57,8 @@
             clan-core.packages.${system}.clan-cli
             deadnix
             just
-            sops
             pre-commit
+            sops
           ];
         };
       });

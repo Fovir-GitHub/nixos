@@ -141,7 +141,6 @@
         "${mod}+9" = "workspace number 9";
         "${mod}+Tab" = "exec toggle-special";
         "${mod}+b" = "exec kitty --app-id btop btop";
-        "${mod}+y" = "exec kitty --app-id yazi yazi";
         "${mod}+bracketleft" = "exec move-prev";
         "${mod}+bracketright" = "exec move-next";
         "${mod}+comma" = "exec ws-prev";
@@ -152,6 +151,7 @@
         "${mod}+j" = "focus down";
         "${mod}+k" = "focus up";
         "${mod}+l" = "focus right";
+        "${mod}+m" = "exec swayosd-client --output-volume mute-toggle";
         "${mod}+n" = "exec neovide";
         "${mod}+o" = "exec screenshot-ocr";
         "${mod}+p" = "exec swaylock";
@@ -160,6 +160,7 @@
         "${mod}+r" = "exec restart-waybar";
         "${mod}+s" = "exec screenshot-area";
         "${mod}+space" = "floating toggle";
+        "${mod}+y" = "exec kitty --app-id yazi yazi";
         "--release Caps_Lock" = "exec swayosd-client --caps-lock";
         "Ctrl+Alt+Space" = "exec swayosd-client --playerctl play-pause";
         "Ctrl+Alt+n" = "exec playerctl next";

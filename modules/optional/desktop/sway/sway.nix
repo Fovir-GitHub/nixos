@@ -198,7 +198,7 @@
       input."type:touchpad".events = "disabled";
     };
     extraConfig = ''
-      seat * hide_cursor 1000
+      seat * hide_cursor when-typing enable
     '';
     extraOptions = ["--unsupported-gpu"];
     extraSessionCommands = ''

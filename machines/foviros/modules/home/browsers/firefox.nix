@@ -68,6 +68,7 @@
         "{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}/latest.xpi";
           installation_mode = "force_installed";
+          private_browsing = true;
         };
         # Wappalyzer - Technology profiler
         "wappalyzer@crunchlabz.com" = {

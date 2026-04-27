@@ -17,7 +17,8 @@
         virt_text = true;
         virt_text_pos = "eol";
       };
-      update_debounce = 100;
+      update_debounce = 1000;
+      watch_gitdir.follow_files = true;
     };
   };
 

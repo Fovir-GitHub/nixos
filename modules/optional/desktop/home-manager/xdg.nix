@@ -30,7 +30,7 @@
       };
       mimeApps = let
         archiver = ["peazip.desktop"];
-        browser = ["firefox-devedition.desktop"];
+        browser = ["librewolf.desktop"];
         filemanager = ["nemo.desktop"];
         image-viewer = ["oculante.desktop"];
         libreoffice-calc = ["libreoffice-calc.desktop"];

@@ -17,11 +17,14 @@ in {
       gfo = "git fetch origin";
       gfu = "git fetch upstream";
       gpa = "git push --all";
+      gpt = "git push --tags";
+      gpwt = "git push && git push --tags";
       gs = "git switch";
       gsc = "git switch --create";
       gsd = "git switch $(git_develop_branch)";
       gsm = "git switch $(git_main_branch)";
       gst = "git status --untracked-files";
+      gtd = "git tag --delete";
       j = "just";
       la = "eza -a --color=always --group-directories-first --icons=always"; # All files and dirs.
       ll = "eza -l --color=always --group-directories-first --icons=always"; # Long format.

@@ -21,7 +21,7 @@
     host = "0.0.0.0";
     loadModels = [
       "gemma3:12b"
-      "gemma4:e4b"
+      "gemma4:26b"
       "gpt-oss:20b"
       "nomic-embed-text:v1.5"
       "qwen2.5-coder:32b-instruct-q3_K_S"

@@ -5,7 +5,6 @@
     ./android.nix
     ./dconf.nix
     ./delta.nix
-    ./dosbox.nix
     ./formatters.nix
     ./git.nix
     ./just.nix

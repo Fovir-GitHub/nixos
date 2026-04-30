@@ -95,6 +95,11 @@
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/4045009/latest.xpi";
           installation_mode = "force_installed";
         };
+        # Tampermonkey
+        "firefox@tampermonkey.net" = {
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/firefox@tampermonkey.net/latest.xpi";
+          installation_mode = "force_installed";
+        };
       };
 
       Preferences = {

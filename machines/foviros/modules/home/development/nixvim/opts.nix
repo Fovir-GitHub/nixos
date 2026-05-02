@@ -53,6 +53,7 @@
     foldlevelstart = 99;
     foldmethod = "expr";
     foldtext = "v:lua.MyFoldText()";
+    guifont = "JetBrainsMono Nerd Font Mono";
   };
 
   filetype.extension = {"tmpl" = "gotmpl";};

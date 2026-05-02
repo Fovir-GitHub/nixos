@@ -36,6 +36,12 @@ with lib; {
         interface = [
           "127.0.0.1"
           "::1"
+          "192.168.122.1"
+        ];
+        access-control = [
+          "127.0.0.0/8 allow"
+          "::1/128 allow"
+          "192.168.122.0/24 allow"
         ];
         num-threads = 2;
         prefetch = true;

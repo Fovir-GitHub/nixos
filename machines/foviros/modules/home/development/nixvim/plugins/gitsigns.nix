@@ -29,5 +29,11 @@
       mode = "n";
       options.desc = "[D]iff [T]his";
     }
+    {
+      action = "<cmd>Gitsigns refresh<CR>";
+      key = "<leader>gr";
+      mode = "n";
+      options.desc = "[G]itsigns [R]efresh";
+    }
   ];
 }

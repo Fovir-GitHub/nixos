@@ -5,8 +5,8 @@
     environment = import ../values/tuwunel-env.nix;
     extraOptions = [
       "--cpus=0.5"
-      "--memory=128m"
-      "--memory-swap=128m"
+      "--memory=256m"
+      "--memory-swap=256m"
     ];
     ports = ["127.0.0.1:2217:8008"];
     pull = "newer";

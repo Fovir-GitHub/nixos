@@ -3,6 +3,7 @@
     ./abolish.nix
     ./bufferline.nix
     ./cmp-conventionalcommits.nix
+    ./colorful-winsep.nix
     ./colorizer.nix
     ./comment.nix
     ./conform-nvim.nix

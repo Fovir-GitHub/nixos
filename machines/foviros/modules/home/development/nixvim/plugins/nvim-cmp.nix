@@ -4,64 +4,68 @@
 
     autoEnableSources = true;
     filetype = {
-      c = {
-        sources = [
-          {name = "nvim_lsp";}
-          {name = "path";}
-          {name = "luasnip";}
-        ];
-      };
-      cpp = {
-        sources = [
-          {name = "nvim_lsp";}
-          {name = "path";}
-          {name = "luasnip";}
-        ];
-      };
-      java = {
-        sources = [
-          {name = "nvim_lsp";}
-          {name = "path";}
-          {name = "luasnip";}
-        ];
-      };
-      rust = {
-        sources = [
-          {name = "nvim_lsp";}
-          {name = "path";}
-          {name = "luasnip";}
-        ];
-      };
-      go = {
-        sources = [
-          {name = "nvim_lsp";}
-          {name = "path";}
-          {name = "luasnip";}
-        ];
-      };
-      scss = {
-        sources = [
-          {name = "nvim_lsp";}
-          {name = "path";}
-          {name = "luasnip";}
-        ];
-      };
-      html = {
-        sources = [
-          {name = "nvim_lsp";}
-          {name = "path";}
-          {name = "emmet";}
-          {name = "luasnip";}
-          {name = "buffer";}
-        ];
-      };
-      gitcommit = {
-        sources = [
-          {name = "conventionalcommits";}
-          {name = "path";}
-          {name = "buffer";}
-        ];
-      };
+      c.sources = [
+        {name = "nvim_lsp";}
+        {name = "path";}
+        {name = "luasnip";}
+      ];
+      cpp.sources = [
+        {name = "nvim_lsp";}
+        {name = "path";}
+        {name = "luasnip";}
+      ];
+      java.sources = [
+        {name = "nvim_lsp";}
+        {name = "path";}
+        {name = "luasnip";}
+      ];
+      rust.sources = [
+        {name = "nvim_lsp";}
+        {name = "path";}
+        {name = "luasnip";}
+      ];
+      go.sources = [
+        {name = "nvim_lsp";}
+        {name = "path";}
+        {name = "luasnip";}
+      ];
+      scss.sources = [
+        {name = "nvim_lsp";}
+        {name = "path";}
+        {name = "luasnip";}
+      ];
+      html.sources = [
+        {name = "nvim_lsp";}
+        {name = "path";}
+        {name = "emmet";}
+        {name = "luasnip";}
+        {name = "buffer";}
+      ];
+      gitcommit.sources = [
+        {name = "conventionalcommits";}
+        {name = "path";}
+        {name = "buffer";}
+      ];
+      markdown.sources = [
+        {name = "nvim_lsp";}
+        {name = "path";}
+        {name = "buffer";}
+        {name = "vimtex";}
+        {
+          name = "latex_symbols";
+          option.strategy = 2;
+        }
+      ];
+      tex.sources = [
+        {name = "nvim_lsp";}
+        {name = "path";}
+        {name = "buffer";}
+        {name = "vimtex";}
+        {
+          name = "latex_symbols";
+          option.strategy = 2;
+        }
+      ];
     };
 
     settings = {
@@ -71,7 +75,6 @@
         {name = "nvim_lsp";}
         {name = "path";}
         {name = "buffer";}
-        {name = "vimtex";}
       ];
 
       snippet.expand = ''
@@ -135,5 +138,8 @@
     };
   };
 
-  plugins.cmp-vimtex.enable = true;
+  plugins = {
+    cmp-latex-symbols.enable = true;
+    cmp-vimtex.enable = true;
+  };
 }

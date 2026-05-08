@@ -61,7 +61,7 @@
               vim.cmd("TermExec cmd='" .. "cd " .. path .. "'" .. "open=0")
             end
           '';
-          limit = 4;
+          limit = 9;
         };
         footer = [" Coding or Dying "];
       };

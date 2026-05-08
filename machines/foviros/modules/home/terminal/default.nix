@@ -5,6 +5,7 @@ in {
     ./bash.nix
     ./fastfetch
     ./kitty.nix
+    ./scripts.nix
     ./starship.nix
     ./zsh.nix
   ];

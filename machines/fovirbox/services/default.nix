@@ -25,5 +25,6 @@
     ./umami.nix
     ./valkey.nix
     ./wakapi.nix
+    ./zeroclaw.nix
   ];
 }

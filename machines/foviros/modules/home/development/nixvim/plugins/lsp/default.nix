@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    # ./move_analyzer.nix
     ./asm_lsp.nix
     ./clangd.nix
     ./cmake.nix
@@ -12,7 +13,6 @@
     ./just.nix
     ./lemminx.nix
     ./ltex.nix
-    ./move_analyzer.nix
     ./nil.nix
     ./pyright.nix
     ./rust_analyzer.nix

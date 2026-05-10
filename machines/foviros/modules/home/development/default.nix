@@ -1,6 +1,7 @@
 {...}: {
   imports = [
     # ./llama-cpp.nix
+    # ./sui.nix
     # ./vscodium.nix
     ./android.nix
     ./dconf.nix
@@ -15,7 +16,6 @@
     ./nixvim
     ./opencode.nix
     ./podman-compose.nix
-    ./sui.nix
     ./usbutils.nix
     ./wakatime.nix
     ./weka.nix

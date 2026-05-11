@@ -5,7 +5,7 @@
     #     platform = prev.stdenv.hostPlatform;
     #   };
     # })
-    (final: prev: {
+    (_final: prev: {
       stable2505 = inputs.nixpkgs-25-05.legacyPackages.${prev.system};
     })
     inputs.nix-vscode-extensions.overlays.default

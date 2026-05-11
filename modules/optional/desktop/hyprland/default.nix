@@ -1,6 +1,5 @@
 {
   username,
-  avatar-path,
   monitor-config ? [],
 }: {
   programs.hyprland = {

@@ -1,9 +1,5 @@
 {username}: {
-  home-manager.users.${username} = {
-    config,
-    pkgs,
-    ...
-  }: {
+  home-manager.users.${username} = {config, ...}: {
     xdg = {
       enable = true;
 

@@ -6,7 +6,7 @@
       enable = true;
 
       # From https://discourse.nixos.org/t/fail2ban-is-not-working-for-sshd-with-systemd-backend/48972/2
-      package = pkgs.fail2ban.overrideAttrs (old: {
+      package = pkgs.fail2ban.overrideAttrs (_old: {
         patches = [
           (pkgs.fetchpatch {
             url = "https://github.com/fail2ban/fail2ban/commit/2fed408c05ac5206b490368d94599869bd6a056d.patch";

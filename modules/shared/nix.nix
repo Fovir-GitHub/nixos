@@ -1,5 +1,4 @@
-{lib, ...}:
-with lib; {
+{...}: {
   nix = {
     channel.enable = false;
     gc = {

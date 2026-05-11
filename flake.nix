@@ -1,6 +1,5 @@
 {
   inputs = {
-    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     clan-core = {
       inputs.nixpkgs.follows = "nixpkgs";
       url = "https://git.clan.lol/clan/clan-core/archive/main.tar.gz";
@@ -13,10 +12,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
       url = "github:nix-community/home-manager";
     };
-    hyprshell = {
-      inputs.hyprland.follows = "nixpkgs";
-      url = "github:H3rmt/hyprshell?ref=hyprshell-release";
-    };
+    hyprshell.url = "github:H3rmt/hyprshell?ref=hyprshell-release";
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     nixpkgs-25-05.url = "github:nixos/nixpkgs/nixos-25.05";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";

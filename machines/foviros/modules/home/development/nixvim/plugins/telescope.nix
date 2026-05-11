@@ -79,6 +79,11 @@
         mode = "n";
         options.desc = "[S]earch [T]ext";
       };
+      "<leader>tr" = {
+        action = "resume";
+        mode = "n";
+        options.desc = "[T]elescope [R]esume";
+      };
     };
   };
 }

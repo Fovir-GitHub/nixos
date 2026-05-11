@@ -12,7 +12,7 @@ in {
 
   imports = [
     ../../modules/optional/boot-loader/limine.nix
-    ../../modules/optional/kernels/cachyos-server.nix
+    ../../modules/optional/kernels/xanmod.nix
     ../../modules/optional/virtualisation/podman.nix
     ../../modules/shared
     ./modules

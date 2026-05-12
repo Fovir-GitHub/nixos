@@ -193,6 +193,7 @@
           }
         '';
         "devtools.toolbox.host" = "right";
+        "extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
         "privacy.clearOnShutdown_v2.cache" = false;
         "privacy.clearOnShutdown_v2.cookiesAndStorage" = false;
         "sidebar.position_start" = false;

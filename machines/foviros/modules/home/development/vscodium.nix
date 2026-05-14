@@ -9,10 +9,12 @@
         catppuccin.catppuccin-vsc
         catppuccin.catppuccin-vsc-icons
         esbenp.prettier-vscode
+        ibm.zopeneditor
         jock.svg
         movebit.sui-move-analyzer
         mysten.move
         vscodevim.vim
+        zowe.vscode-extension-for-zowe
       ];
       enableUpdateCheck = false;
       enableExtensionUpdateCheck = false;

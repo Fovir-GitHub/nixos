@@ -2,7 +2,6 @@
   imports = [
     # ./llama-cpp.nix
     # ./sui.nix
-    # ./vscodium.nix
     ./android.nix
     ./dconf.nix
     ./delta.nix
@@ -17,6 +16,7 @@
     ./opencode.nix
     ./podman-compose.nix
     ./usbutils.nix
+    ./vscodium.nix
     ./wakatime.nix
     ./weka.nix
   ];

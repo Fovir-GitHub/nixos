@@ -3,7 +3,7 @@
     autoStart = true;
     image = "searxng/searxng:latest";
     ports = ["127.0.0.1:8888:8080"];
-    pull = "always";
+    pull = "newer";
     volumes = let
       searxng-path = "${import ../values/podman-data-dir.nix}/searxng";
     in [

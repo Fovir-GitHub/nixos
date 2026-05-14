@@ -4,7 +4,7 @@
       autoStart = true;
       image = "ghcr.io/fovir-github/elk:main";
       ports = ["127.0.0.1:1111:5314"];
-      pull = "always";
+      pull = "newer";
       user = "911:911";
       volumes = ["${import ../values/podman-data-dir.nix}/elk:/elk/data"];
     };

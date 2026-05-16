@@ -15,6 +15,7 @@
     hyprshell.url = "github:H3rmt/hyprshell?ref=hyprshell-release";
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     nixpkgs-25-05.url = "github:nixos/nixpkgs/nixos-25.05";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.11";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixvim.url = "github:nix-community/nixvim";
   };

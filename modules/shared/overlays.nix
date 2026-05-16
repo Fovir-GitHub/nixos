@@ -6,7 +6,8 @@
     #   };
     # })
     (_final: prev: {
-      stable2505 = inputs.nixpkgs-25-05.legacyPackages.${prev.system};
+      stable = import inputs.nixpkgs-stable {system = prev.system;};
+      stable2505 = import inputs.nixpkgs-25-05 {system = prev.system;};
     })
     inputs.nix-vscode-extensions.overlays.default
   ];

@@ -9,6 +9,7 @@
       "cuda_cudart"
       "cuda_nvcc"
       "libcublas"
+      "nvidia-kernel-modules"
       "nvidia-settings"
       "nvidia-x11"
     ];

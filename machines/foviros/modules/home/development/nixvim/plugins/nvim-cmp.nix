@@ -58,9 +58,9 @@
       ];
       tex.sources = [
         {name = "nvim_lsp";}
+        {name = "vimtex";}
         {name = "path";}
         {name = "buffer";}
-        {name = "vimtex";}
         {
           name = "latex_symbols";
           option.strategy = 2;

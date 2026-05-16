@@ -32,6 +32,7 @@ in {
       ls = "eza -alF --color=always --group --group-directories-first --icons=always"; # Preferred listing.
       lt = "eza -aT --color=always --group-directories-first --icons=always"; # Tree listing.
       mv = "mv --verbose";
+      n = "nvim";
       open = "xdg-open"; # Open.
       rm = "rm -v";
       tmp = "cd $(mktemp -d)";

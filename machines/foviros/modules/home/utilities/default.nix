@@ -12,6 +12,7 @@
     ./localsend.nix
     ./lutris.nix
     ./nemo.nix
+    ./nixpkgs-track.nix
     ./qalculate.nix
     ./qbittorrent.nix
     ./screenshot.nix

@@ -7,6 +7,7 @@
     prettier-plugin-go-template
     taplo
     xmlstarlet
+    sql-formatter
   ];
 
   home.file = {

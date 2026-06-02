@@ -18,6 +18,7 @@
         "nix" = ["alejandra"];
         "python" = ["black"];
         "rust" = ["rustfmt"];
+        "sql" = ["sql-formatter"];
         "tex" = ["latexindent"];
         "toml" = ["taplo"];
       };

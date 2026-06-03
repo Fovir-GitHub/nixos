@@ -1,6 +1,7 @@
 {
   imports = [
     # ../values/meet.nix
+    # ./social.nix
     # ./zeroclaw.nix
     ../values/sci.nix
     ./authelia.nix
@@ -19,7 +20,6 @@
     ./restic.nix
     ./rsshub.nix
     ./searxng.nix
-    ./social.nix
     ./syncthing.nix
     ./tuwunel.nix
     ./valkey.nix

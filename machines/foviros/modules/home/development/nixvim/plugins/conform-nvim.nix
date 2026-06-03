@@ -18,11 +18,14 @@
         "nix" = ["alejandra"];
         "python" = ["black"];
         "rust" = ["rustfmt"];
-        "sql" = ["sql-formatter"];
+        "sql" = ["pg_format"];
         "tex" = ["latexindent"];
         "toml" = ["taplo"];
       };
-      formatters.gofumpt.append_args = ["-extra"];
+      formatters = {
+        gofumpt.append_args = ["-extra"];
+        pg_format.append_args = ["-u" "0" "-U" "0" "--no-extra-line"];
+      };
     };
   };
 }

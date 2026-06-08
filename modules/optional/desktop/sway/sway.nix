@@ -188,6 +188,7 @@
           "swayrd"
           "thunderbird"
           "swaymsg focus output eDP-1"
+          "syncthing --no-browser"
         ];
       in
         map (command: {

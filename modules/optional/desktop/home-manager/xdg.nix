@@ -52,9 +52,10 @@
           "video/*" = video-player;
 
           "application/pdf" = browser;
+          "application/rss+xml" = browser;
+          "text/html" = browser;
           "x-scheme-handler/http" = browser;
           "x-scheme-handler/https" = browser;
-          "text/html" = browser;
 
           "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = libreoffice-writer;
           "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" = libreoffice-calc;

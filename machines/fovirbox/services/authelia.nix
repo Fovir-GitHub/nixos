@@ -8,8 +8,8 @@
     ports = ["127.0.0.1:9091:9091"];
     volumes = [
       "${configFile}:/config/configuration.yml"
-      "${import ../values/podman-data-dir.nix}/authelia:/config"
       "${userConfig}:/config/users_database.yml"
+      "authelia:/config"
     ];
   };
 }

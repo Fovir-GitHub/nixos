@@ -3,6 +3,7 @@
     ./alpaca.nix
     ./anki.nix
     ./archiver.nix
+    ./binutils.nix
     ./element-desktop.nix
     ./gotify-desktop.nix
     ./gpg.nix
@@ -19,5 +20,6 @@
     ./syncthing.nix
     ./thunderbird.nix
     ./touchpad.nix
+    ./unixtools.nix
   ];
 }

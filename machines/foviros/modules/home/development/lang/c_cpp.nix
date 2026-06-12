@@ -46,11 +46,4 @@
     PointerAlignment: Middle
     BreakTemplateDeclarations: true
   '';
-
-  home.file.".clangd".text = ''
-    CompileFlags:
-      Add:
-        - -isystem${pkgs.libcxx.dev}/include/c++/v1
-        - -std=c++17
-  '';
 }

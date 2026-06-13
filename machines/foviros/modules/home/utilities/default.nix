@@ -12,6 +12,7 @@
     ./libreoffice.nix
     ./localsend.nix
     ./lutris.nix
+    ./motrix-next.nix
     ./nemo.nix
     ./nixpkgs-track.nix
     ./qalculate.nix

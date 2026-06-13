@@ -1,10 +1,10 @@
 {
   imports = [
     # ../values/meet.nix
+    # ./authelia.nix
     # ./social.nix
     # ./zeroclaw.nix
     ../values/sci.nix
-    ./authelia.nix
     ./bird-lg.nix
     ./caddy.nix
     ./dn42.nix
@@ -23,6 +23,7 @@
     ./syncthing.nix
     ./tuwunel.nix
     ./valkey.nix
+    ./voidauth.nix
     ./wakapi.nix
   ];
 }

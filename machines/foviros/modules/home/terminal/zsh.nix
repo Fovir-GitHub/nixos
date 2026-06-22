@@ -21,6 +21,7 @@ in {
       gpt = "git push --tags";
       gpwt = "git push && git push --tags";
       grau = "git remote add upstream";
+      grsp = "git restore -p";
       gs = "git switch";
       gsc = "git switch --create";
       gsd = "git switch $(git_develop_branch)";

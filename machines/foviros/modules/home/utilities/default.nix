@@ -1,6 +1,5 @@
 {
   imports = [
-    ./alpaca.nix
     ./anki.nix
     ./archiver.nix
     ./binutils.nix

@@ -5,6 +5,10 @@
     tui.theme = "catppuccin-macchiato";
     settings = {
       autoupdate = true;
+      plugin = [
+        "@dietrichgebert/ponytail"
+        "opencode-websearch-cited@1.2.0"
+      ];
       provider = {
         ollama = {
           models = let

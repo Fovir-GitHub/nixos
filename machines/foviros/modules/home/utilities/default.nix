@@ -14,6 +14,7 @@
     ./motrix-next.nix
     ./nemo.nix
     ./nixpkgs-track.nix
+    ./nwg-displays.nix
     ./qalculate.nix
     ./qbittorrent.nix
     ./screenshot.nix

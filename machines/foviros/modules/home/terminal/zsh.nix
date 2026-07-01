@@ -13,7 +13,9 @@ in {
     history.size = 10000;
     syntaxHighlighting.enable = true;
     shellAliases = {
+      cf = "cargo fix --allow-dirty --allow-staged";
       cp = "cp -v";
+      cr = "cargo run";
       gc = "git commit --verbose -s";
       gfo = "git fetch origin";
       gfu = "git fetch upstream";

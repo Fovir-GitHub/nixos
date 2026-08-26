@@ -8,6 +8,7 @@ in
     ./alacritty.nix
     ./bash.nix
     ./fastfetch
+    ./hermes-agent.nix
     ./pure-prompt.nix
     ./scripts.nix
     ./zsh.nix

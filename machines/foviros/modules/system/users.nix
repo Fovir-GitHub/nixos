@@ -19,9 +19,10 @@
         username = "fovir";
       };
       imports = [
-        ../../../../modules/optional/mutable-files.nix
         ../../../../modules/optional/activations.nix
+        ../../../../modules/optional/mutable-files.nix
         ../home
+        inputs.hermes-agent.homeManagerModules.default
       ];
     };
   };

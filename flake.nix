@@ -12,6 +12,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
       url = "github:nix-community/home-manager/release-26.05";
     };
+    hermes-agent.url = "github:NousResearch/hermes-agent/v2026.8.19";
     hyprshell.url = "github:H3rmt/hyprshell?ref=hyprshell-release";
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     nixpkgs-25-05.url = "github:nixos/nixpkgs/nixos-25.05";

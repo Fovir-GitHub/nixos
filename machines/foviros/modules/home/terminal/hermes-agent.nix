@@ -1,4 +1,8 @@
 { ... }: {
+  home.file = {
+    ".hermes/SOUL.md".source = ../../../values/hermes-agent-soul.md;
+  };
+
   services.hermes-agent = {
     enable = true;
 

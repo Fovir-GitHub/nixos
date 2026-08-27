@@ -40,6 +40,7 @@ in
       gsm = "git switch $(git_main_branch)";
       gst = "git status --untracked-files";
       gtd = "git tag --delete";
+      h = "hermes";
       j = "just";
       la = "eza -a --color=always --group-directories-first --icons=always"; # All files and dirs.
       ll = "eza -l --color=always --group-directories-first --icons=always"; # Long format.

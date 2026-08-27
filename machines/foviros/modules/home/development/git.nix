@@ -11,7 +11,7 @@
         pull.rebase = true;
         push.autoSetupRemote = true;
         rebase.autoStash = true;
-        rerere.enabled = true;
+        rerere.enabled = false;
         tag.gpgSign = true;
         user = import ../../../values/git-user.nix;
       };

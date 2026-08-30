@@ -12,7 +12,7 @@
     settings = {
       model = {
         base_url = "https://opencode.ai/zen/v1/chat/completions";
-        default = "hy3-free";
+        default = "nemotron-3-ultra-free";
         provider = "opencode";
       };
       toolsets = [ "all" ];

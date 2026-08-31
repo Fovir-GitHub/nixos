@@ -11,9 +11,10 @@
     environment = import ../../../values/hermes-agent-env.nix;
     settings = {
       model = {
-        base_url = "https://opencode.ai/zen/v1/chat/completions";
-        default = "nemotron-3-ultra-free";
-        provider = "opencode";
+        # base_url = "https://opencode.ai/zen/v1/chat/completions";
+        base_url = "https://openrouter.ai/api/v1/chat/completions";
+        default = "minimax/minimax-m3:free";
+        provider = "openrouter";
       };
       toolsets = [ "all" ];
       terminal = {
